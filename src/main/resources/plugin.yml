@@ -1,0 +1,4 @@
+name: HyperFlare
+version: '${project.version}'
+main: net.picklestring.hyperflare.HyperFlare
+api-version: '1.20'
