@@ -10,4 +10,9 @@ public class HyperIdentifier {
         this.id = id;
         this.namespace = namespace;
     }
+    
+    public String getIdentifiableString()
+    {
+        return namespace+":"+id;
+    }
 }
