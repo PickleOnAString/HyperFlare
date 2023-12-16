@@ -9,6 +9,7 @@ import org.bukkit.persistence.PersistentDataType;
 
 public class HyperItem {
     public HyperIdentifier ident;
+    public int modelData;
     public HyperSettings itemSettings;
     
     public HyperItem(HyperSettings settings)
@@ -26,6 +27,7 @@ public class HyperItem {
         
         meta.getPersistentDataContainer().set(HybridPlugin.hyperItemIdentifiableKey, PersistentDataType.STRING, ident.getIdentifiableString());
         meta.setDisplayName(itemSettings.getDisplayName());
+        meta.setCustomModelData(modelData);
         
         itemStack.setItemMeta(meta);
         return itemStack;

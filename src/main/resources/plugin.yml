@@ -2,6 +2,8 @@ name: HyperFlare
 version: '${project.version}'
 main: net.picklestring.hyperflare.HyperFlare
 api-version: '1.20'
+depend:
+  - ProtocolLib
 commands:
   hyper:
     description: The main command for hyper flare
